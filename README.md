@@ -8,7 +8,7 @@ This module is designed to build the LGS metadata table using all available epoc
 
 ### Prerequisites
 
-This module is designed to be completely self contained and devoid of any proprietary dependencies.  However, in order to ensure that the most recent epochs are included, use the following rsync block in terminal to download any new data:
+This module is designed to be completely self contained and devoid of any proprietary dependencies.  However, in order to ensure that the most recent epochs are included, use the following rsync block in terminal to download any new data (replace USER with your account name):
 
 ```
 rsync -av --include="*lgs" --include="*lgs/clean" --include="*lgs/clean/*" --include="*lgs/clean/*/*" --include="*lgs/combo" --include="*lgs/combo/*" --include="*lgs/combo/*/*" --include="*lgs*" --include="*lgs*/clean" --include="*lgs*/clean/*" --include="*lgs*/clean/*/*" --include="*lgs*/combo" --include="*lgs*/combo/*" --include="*lgs*/combo/*/*" --exclude="*" USER@nyx.astro.ucla.edu:/g/ghez/data/gc/ /g/lu/data/gc/lgs_data
